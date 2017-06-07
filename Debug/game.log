@@ -1,0 +1,12 @@
+﻿  Game.cpp
+o:\code\myopengl game\game\game.cpp(131): warning C4018: '<': signed/unsigned mismatch
+o:\code\myopengl game\game\game.cpp(159): warning C4305: '=': truncation from 'double' to 'float'
+o:\code\myopengl game\game\game.cpp(222): warning C4305: '=': truncation from 'double' to 'float'
+o:\code\myopengl game\game\game.cpp(323): warning C4018: '<': signed/unsigned mismatch
+o:\code\myopengl game\game\game.cpp(329): warning C4305: 'argument': truncation from 'double' to 'float'
+o:\code\myopengl game\game\game.cpp(510): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Compiling...
+  main.cpp
+  Generating Code...
+LINK : fatal error LNK1561: entry point must be defined
