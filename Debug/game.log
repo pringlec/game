@@ -1,12 +1,15 @@
 ﻿  Game.cpp
-o:\code\myopengl game\game\game.cpp(131): warning C4018: '<': signed/unsigned mismatch
-o:\code\myopengl game\game\game.cpp(159): warning C4305: '=': truncation from 'double' to 'float'
-o:\code\myopengl game\game\game.cpp(222): warning C4305: '=': truncation from 'double' to 'float'
-o:\code\myopengl game\game\game.cpp(323): warning C4018: '<': signed/unsigned mismatch
-o:\code\myopengl game\game\game.cpp(329): warning C4305: 'argument': truncation from 'double' to 'float'
-o:\code\myopengl game\game\game.cpp(510): warning C4018: '<': signed/unsigned mismatch
+o:\code\myopenglgame\game\game.cpp(131): warning C4018: '<': signed/unsigned mismatch
+o:\code\myopenglgame\game\game.cpp(159): warning C4305: '=': truncation from 'double' to 'float'
+o:\code\myopenglgame\game\game.cpp(222): warning C4305: '=': truncation from 'double' to 'float'
+o:\code\myopenglgame\game\game.cpp(323): warning C4018: '<': signed/unsigned mismatch
+o:\code\myopenglgame\game\game.cpp(329): warning C4305: 'argument': truncation from 'double' to 'float'
+o:\code\myopenglgame\game\game.cpp(510): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
   Compiling...
   main.cpp
   Generating Code...
-LINK : fatal error LNK1561: entry point must be defined
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'O:\Code\MyOpenGLGame\game\Debug\vc120.pdb'; linking object as if no debug info
+  game.vcxproj -> O:\Code\MyOpenGLGame\game\Debug\game.exe
+  game.vcxproj -> O:\Code\MyOpenGLGame\game\Debug\game.pdb (Partial PDB)

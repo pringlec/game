@@ -16,7 +16,7 @@ work in the exact same way.
 #ifndef SHADER_PROGRAM_HPP
 #define SHADER_PROGRAM_HPP
 
-#include <GL/glew.h>
+#include "Libs\glew-2.0.0-win32\glew-2.0.0\include\GL\glew.h"
 
 #include <iostream>
 #include <fstream>
