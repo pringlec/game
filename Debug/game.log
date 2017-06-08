@@ -1,15 +1,30 @@
-﻿  Game.cpp
-o:\code\myopenglgame\game\game.cpp(131): warning C4018: '<': signed/unsigned mismatch
-o:\code\myopenglgame\game\game.cpp(159): warning C4305: '=': truncation from 'double' to 'float'
-o:\code\myopenglgame\game\game.cpp(222): warning C4305: '=': truncation from 'double' to 'float'
-o:\code\myopenglgame\game\game.cpp(323): warning C4018: '<': signed/unsigned mismatch
-o:\code\myopenglgame\game\game.cpp(329): warning C4305: 'argument': truncation from 'double' to 'float'
-o:\code\myopenglgame\game\game.cpp(510): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-  Compiling...
+﻿  Object.cpp
   main.cpp
+o:\code\myopenglgame\game\libs\phys\src\linearmath\btidebugdraw.h(169): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
+o:\code\myopenglgame\game\libs\phys\src\linearmath\btidebugdraw.h(170): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
+o:\code\myopenglgame\game\libs\phys\src\linearmath\btidebugdraw.h(171): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
+o:\code\myopenglgame\game\main.cpp(5): warning C4316: 'Game': object allocated on the heap may not be aligned 16
+  Game.cpp
+o:\code\myopenglgame\game\libs\phys\src\linearmath\btidebugdraw.h(169): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
+o:\code\myopenglgame\game\libs\phys\src\linearmath\btidebugdraw.h(170): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
+o:\code\myopenglgame\game\libs\phys\src\linearmath\btidebugdraw.h(171): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
+o:\code\myopenglgame\game\game.cpp(159): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
+o:\code\myopenglgame\game\game.cpp(294): warning C4018: '<': signed/unsigned mismatch
+o:\code\myopenglgame\game\game.cpp(477): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
 LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
-glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'O:\Code\MyOpenGLGame\game\Debug\vc120.pdb'; linking object as if no debug info
-  game.vcxproj -> O:\Code\MyOpenGLGame\game\Debug\game.exe
-  game.vcxproj -> O:\Code\MyOpenGLGame\game\Debug\game.pdb (Partial PDB)
+Game.obj : error LNK2019: unresolved external symbol "void * __cdecl btAlignedAllocInternal(unsigned int,int)" (?btAlignedAllocInternal@@YAPAXIH@Z) referenced in function "public: static void * __cdecl btDefaultMotionState::operator new(unsigned int)" (??2btDefaultMotionState@@SAPAXI@Z)
+Game.obj : error LNK2019: unresolved external symbol "void __cdecl btAlignedFreeInternal(void *)" (?btAlignedFreeInternal@@YAXPAX@Z) referenced in function "public: static void __cdecl btDefaultMotionState::operator delete(void *)" (??3btDefaultMotionState@@SAXPAX@Z)
+Game.obj : error LNK2019: unresolved external symbol "public: __thiscall btCollisionDispatcher::btCollisionDispatcher(class btCollisionConfiguration *)" (??0btCollisionDispatcher@@QAE@PAVbtCollisionConfiguration@@@Z) referenced in function __catch$?initialise@Game@@QAEXXZ$0
+Game.obj : error LNK2019: unresolved external symbol "public: __thiscall btDefaultCollisionConfiguration::btDefaultCollisionConfiguration(struct btDefaultCollisionConstructionInfo const &)" (??0btDefaultCollisionConfiguration@@QAE@ABUbtDefaultCollisionConstructionInfo@@@Z) referenced in function __catch$?initialise@Game@@QAEXXZ$0
+Game.obj : error LNK2019: unresolved external symbol "public: __thiscall btDbvtBroadphase::btDbvtBroadphase(class btOverlappingPairCache *)" (??0btDbvtBroadphase@@QAE@PAVbtOverlappingPairCache@@@Z) referenced in function __catch$?initialise@Game@@QAEXXZ$0
+Game.obj : error LNK2019: unresolved external symbol "public: __thiscall btDiscreteDynamicsWorld::btDiscreteDynamicsWorld(class btDispatcher *,class btBroadphaseInterface *,class btConstraintSolver *,class btCollisionConfiguration *)" (??0btDiscreteDynamicsWorld@@QAE@PAVbtDispatcher@@PAVbtBroadphaseInterface@@PAVbtConstraintSolver@@PAVbtCollisionConfiguration@@@Z) referenced in function __catch$?initialise@Game@@QAEXXZ$0
+Game.obj : error LNK2019: unresolved external symbol "public: class btQuaternion __thiscall btRigidBody::getOrientation(void)const " (?getOrientation@btRigidBody@@QBE?AVbtQuaternion@@XZ) referenced in function __catch$?initialise@Game@@QAEXXZ$0
+Game.obj : error LNK2019: unresolved external symbol "public: __thiscall btSequentialImpulseConstraintSolver::btSequentialImpulseConstraintSolver(void)" (??0btSequentialImpulseConstraintSolver@@QAE@XZ) referenced in function __catch$?initialise@Game@@QAEXXZ$0
+Game.obj : error LNK2019: unresolved external symbol "public: int __thiscall btWorldImporter::getNumRigidBodies(void)const " (?getNumRigidBodies@btWorldImporter@@QBEHXZ) referenced in function __catch$?initialise@Game@@QAEXXZ$0
+Game.obj : error LNK2019: unresolved external symbol "public: class btCollisionObject * __thiscall btWorldImporter::getRigidBodyByIndex(int)const " (?getRigidBodyByIndex@btWorldImporter@@QBEPAVbtCollisionObject@@H@Z) referenced in function __catch$?initialise@Game@@QAEXXZ$0
+Game.obj : error LNK2019: unresolved external symbol "public: char const * __thiscall btWorldImporter::getNameForPointer(void const *)const " (?getNameForPointer@btWorldImporter@@QBEPBDPBX@Z) referenced in function __catch$?initialise@Game@@QAEXXZ$0
+Game.obj : error LNK2019: unresolved external symbol "public: __thiscall btBulletWorldImporter::btBulletWorldImporter(class btDynamicsWorld *)" (??0btBulletWorldImporter@@QAE@PAVbtDynamicsWorld@@@Z) referenced in function __catch$?initialise@Game@@QAEXXZ$0
+Game.obj : error LNK2019: unresolved external symbol "public: bool __thiscall btBulletWorldImporter::loadFile(char const *,char const *)" (?loadFile@btBulletWorldImporter@@QAE_NPBD0@Z) referenced in function __catch$?initialise@Game@@QAEXXZ$0
+Object.obj : error LNK2019: unresolved external symbol _SOIL_load_image referenced in function "public: void __thiscall VisibleObject::sendObjectToGPU(void)" (?sendObjectToGPU@VisibleObject@@QAEXXZ)
+O:\Code\MyOpenGLGame\game\Debug\game.exe : fatal error LNK1120: 14 unresolved externals

@@ -393,6 +393,8 @@ public:
 		return uniformMap[uniformName];
 	}
 
+	GLuint getProgramID() { return programId; }
+
 }; // End of class
 
 #endif // SHADER_PROGRAM_HPP

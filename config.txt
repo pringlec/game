@@ -1,13 +1,13 @@
 # Collection of bindings between keys and commands in game
-#Key Q quit
-#Key W forward
-#Key S backward
+key Q quit
+Key W forward
+Key S backward
 Key A left
 Key D right
 Key Z up 
 Key X down
-#Key + faster
-#Key - slower
+Key + faster
+Key - slower
 Key 1 selectObject1
 Key 2 selectObject2
 Key 3 selectObject3

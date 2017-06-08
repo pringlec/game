@@ -75,11 +75,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>O:\Code\MyOpenGLGame\game\Libs\SDL2-2.0.5\include;O:\Code\MyOpenGL Game\game\Libs\glm-0.9.8.4\glm\glm;O:\Code\MyOpenGL Game\game\Libs\glew-2.0.0-win32\glew-2.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>O:\Code\MyOpenGLGame\game\Libs\Simple OpenGL Image Library\src;O:\Code\MyOpenGLGame\game\Libs\assimp\include;O:\Code\MyOpenGLGame\game\Libs\Phys\Serialize;O:\Code\MyOpenGLGame\game\Libs\SDL2-2.0.5\include;O:\Code\MyOpenGL Game\game\Libs\glm-0.9.8.4\glm\glm;O:\Code\MyOpenGL Game\game\Libs\glew-2.0.0-win32\glew-2.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>O:\Code\MyOpenGLGame\game\Libs\SDL2-2.0.5\lib\x86;O:\Code\MyOpenGLGame\game\Libs\SDL2-2.0.5\lib\x64;O:\Code\MyOpenGL Game\game\Libs\glm-0.9.8.4\glm\glm;O:\Code\MyOpenGLGame\game\Libs\glew-2.0.0-win32\glew-2.0.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glew32s.lib;sdl2.lib;sdl2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>O:\Code\MyOpenGLGame\game\Libs\assimp\lib32;O:\Code\MyOpenGLGame\game\Libs\SDL2-2.0.5\lib\x86;O:\Code\MyOpenGLGame\game\Libs\SDL2-2.0.5\lib\x64;O:\Code\MyOpenGL Game\game\Libs\glm-0.9.8.4\glm\glm;O:\Code\MyOpenGLGame\game\Libs\glew-2.0.0-win32\glew-2.0.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;sdl2.lib;assimp.lib;sdl2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
@@ -121,9 +121,11 @@
     <ClCompile Include="main.cpp">
       <DeploymentContent>true</DeploymentContent>
     </ClCompile>
+    <ClCompile Include="Object.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.hpp" />
+    <ClInclude Include="Object.hpp" />
     <ClInclude Include="Shader.hpp" />
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +134,10 @@
   <ItemGroup>
     <None Include="default.frag" />
     <None Include="default.vert" />
+    <None Include="mandelFrag.glsl" />
+    <None Include="mandelVert.glsl" />
+    <None Include="texObjFrag.glsl" />
+    <None Include="texObjVert.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
