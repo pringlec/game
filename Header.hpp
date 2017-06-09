@@ -1,14 +1,18 @@
 #pragma once
-// Needed becuase the linker is fucking stupid and cannot find main.cpp
-#include <Windows.h>
 
+#if(_Win32)
+#include <Windows.h>
+#endif
 // Use GLEW for access to OpenGL 
 #define GLEW_STATIC
 #include "Libs\glew-2.0.0-win32\glew-2.0.0\include\GL\glew.h"
 
 // SDL for windowing and input capture
 #include "Libs\SDL2-2.0.5\include\SDL.h"
+
+// Needed becuase the linker is fucking stupid and cannot find main.cpp
 #undef main
+
 #include "Libs\SDL2-2.0.5\include\SDL_opengl.h"
 
 // GLM for mathematics
