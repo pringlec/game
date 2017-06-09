@@ -1,6 +1,11 @@
 #include "Object.hpp"
-#include "Libs\glm-0.9.8.4\glm\glm\gtc\type_ptr.hpp"
+
+//#include "Libs\glm-0.9.8.4\glm\glm\gtc\type_ptr.hpp"
+#include <gtc\type_ptr.hpp>
+
+//#include "Libs\Simple OpenGL Image Library\src\SOIL.h"
 #include <SOIL.h>
+
 #include <iostream>
 
 using namespace std;

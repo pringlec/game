@@ -22,32 +22,32 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{CE475106-1058-48CF-B0A9-2AA9DE168A09}</ProjectGuid>
     <RootNamespace>game</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -75,12 +75,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
-      <AdditionalIncludeDirectories>O:\Code\MyOpenGLGame\game\Libs\Simple OpenGL Image Library\src;O:\Code\MyOpenGLGame\game\Libs\assimp\include;O:\Code\MyOpenGLGame\game\Libs\Phys\Serialize;O:\Code\MyOpenGLGame\game\Libs\SDL2-2.0.5\include;O:\Code\MyOpenGL Game\game\Libs\glm-0.9.8.4\glm\glm;O:\Code\MyOpenGL Game\game\Libs\glew-2.0.0-win32\glew-2.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/OpenGL/External Libraries/ASSIMP/include;$(SolutionDir)/OpenGL/External Libraries/GLEW/glew/include;$(SolutionDir)/OpenGL/External Libraries/Bullet/src;$(SolutionDir)/OpenGL/External Libraries/GLM/glm/glm;$(SolutionDir)/OpenGL/External Libraries/SDL2/include;$(SolutionDir)/OpenGL/External Libraries/soil/Simple OpenGL Image Library/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>O:\Code\MyOpenGLGame\game\Libs\Phys\lib\Debug;O:\Code\MyOpenGLGame\game\Libs\Simple OpenGL Image Library\lib;O:\Code\MyOpenGLGame\game\Libs\SDL2-2.0.5\lib\x86;O:\Code\MyOpenGLGame\game\Libs\glew-2.0.0-win32\glew-2.0.0\lib\Release\Win32;O:\Code\MyOpenGLGame\game\Libs\assimp\lib32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glew32s.lib;SOIL.lib;sdl2.lib;assimp.lib;sdl2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)/OpenGL/External Libraries/ASSIMP/lib32;$(SolutionDir)/OpenGL/External Libraries/Bullet/Libs;$(SolutionDir)/OpenGL/External Libraries/GLEW/glew/lib/Release/Win32;$(SolutionDir)/OpenGL/External Libraries/SDL2/lib/x86;$(SolutionDir)/OpenGL/External Libraries/soil/Simple OpenGL Image Library/lib;$(SolutionDir)/OpenGL/External Libraries/GLM/glm;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;assimp.lib;libBulletDynamics.lib;libLinearMath.lib;glew32s.lib;SDL2.lib;SDL2main.lib;libSOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
@@ -88,8 +88,13 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)/OpenGL/External Libraries/ASSIMP/include;$(SolutionDir)/OpenGL/External Libraries/GLEW/glew/include;$(SolutionDir)/OpenGL/External Libraries/Bullet/src;$(SolutionDir)/OpenGL/External Libraries/GLM/glm/glm;$(SolutionDir)/OpenGL/External Libraries/SDL2/include;$(SolutionDir)/OpenGL/External Libraries/soil/Simple OpenGL Image Library/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)/OpenGL/External Libraries/ASSIMP/lib32;$(SolutionDir)/OpenGL/External Libraries/Bullet/Libs;$(SolutionDir)/OpenGL/External Libraries/GLEW/glew/lib/Release/Win32;$(SolutionDir)/OpenGL/External Libraries/SDL2/lib/x86;$(SolutionDir)/OpenGL/External Libraries/soil/Simple OpenGL Image Library/lib;$(SolutionDir)/OpenGL/External Libraries/GLM/glm;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;assimp.lib;libBulletDynamics.lib;libLinearMath.lib;glew32s.lib;SDL2.lib;SDL2main.lib;libSOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -97,11 +102,14 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)/OpenGL/External Libraries/ASSIMP/include;$(SolutionDir)/OpenGL/External Libraries/GLEW/glew/include;$(SolutionDir)/OpenGL/External Libraries/Bullet/src;$(SolutionDir)/OpenGL/External Libraries/GLM/glm/glm;$(SolutionDir)/OpenGL/External Libraries/SDL2/include;$(SolutionDir)/OpenGL/External Libraries/soil/Simple OpenGL Image Library/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)/OpenGL/External Libraries/ASSIMP/lib32;$(SolutionDir)/OpenGL/External Libraries/Bullet/Libs;$(SolutionDir)/OpenGL/External Libraries/GLEW/glew/lib/Release/Win32;$(SolutionDir)/OpenGL/External Libraries/SDL2/lib/x86;$(SolutionDir)/OpenGL/External Libraries/soil/Simple OpenGL Image Library/lib;$(SolutionDir)/OpenGL/External Libraries/GLM/glm;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;assimp.lib;libBulletDynamics.lib;libLinearMath.lib;glew32s.lib;SDL2.lib;SDL2main.lib;libSOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -110,11 +118,14 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)/OpenGL/External Libraries/ASSIMP/include;$(SolutionDir)/OpenGL/External Libraries/GLEW/glew/include;$(SolutionDir)/OpenGL/External Libraries/Bullet/src;$(SolutionDir)/OpenGL/External Libraries/GLM/glm/glm;$(SolutionDir)/OpenGL/External Libraries/SDL2/include;$(SolutionDir)/OpenGL/External Libraries/soil/Simple OpenGL Image Library/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)/OpenGL/External Libraries/ASSIMP/lib32;$(SolutionDir)/OpenGL/External Libraries/Bullet/Libs;$(SolutionDir)/OpenGL/External Libraries/GLEW/glew/lib/Release/Win32;$(SolutionDir)/OpenGL/External Libraries/SDL2/lib/x86;$(SolutionDir)/OpenGL/External Libraries/soil/Simple OpenGL Image Library/lib;$(SolutionDir)/OpenGL/External Libraries/GLM/glm;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;assimp.lib;libBulletDynamics.lib;libLinearMath.lib;glew32s.lib;SDL2.lib;SDL2main.lib;libSOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

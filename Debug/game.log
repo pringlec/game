@@ -1,18 +1,4 @@
-﻿  Object.cpp
-  main.cpp
-o:\code\myopenglgame\game\libs\phys\src\linearmath\btidebugdraw.h(169): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
-o:\code\myopenglgame\game\libs\phys\src\linearmath\btidebugdraw.h(170): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
-o:\code\myopenglgame\game\libs\phys\src\linearmath\btidebugdraw.h(171): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
-o:\code\myopenglgame\game\main.cpp(5): warning C4316: 'Game': object allocated on the heap may not be aligned 16
-  Game.cpp
-o:\code\myopenglgame\game\libs\phys\src\linearmath\btidebugdraw.h(169): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
-o:\code\myopenglgame\game\libs\phys\src\linearmath\btidebugdraw.h(170): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
-o:\code\myopenglgame\game\libs\phys\src\linearmath\btidebugdraw.h(171): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
-o:\code\myopenglgame\game\game.cpp(159): warning C4305: 'argument': truncation from 'double' to 'const btScalar'
-o:\code\myopenglgame\game\game.cpp(294): warning C4018: '<': signed/unsigned mismatch
-o:\code\myopenglgame\game\game.cpp(477): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+﻿LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
 Game.obj : error LNK2019: unresolved external symbol "void * __cdecl btAlignedAllocInternal(unsigned int,int)" (?btAlignedAllocInternal@@YAPAXIH@Z) referenced in function "public: static void * __cdecl btDefaultMotionState::operator new(unsigned int)" (??2btDefaultMotionState@@SAPAXI@Z)
 Game.obj : error LNK2019: unresolved external symbol "void __cdecl btAlignedFreeInternal(void *)" (?btAlignedFreeInternal@@YAXPAX@Z) referenced in function "public: static void __cdecl btDefaultMotionState::operator delete(void *)" (??3btDefaultMotionState@@SAXPAX@Z)
 Game.obj : error LNK2019: unresolved external symbol "public: __thiscall btCollisionDispatcher::btCollisionDispatcher(class btCollisionConfiguration *)" (??0btCollisionDispatcher@@QAE@PAVbtCollisionConfiguration@@@Z) referenced in function __catch$?initialise@Game@@QAEXXZ$0
@@ -26,5 +12,5 @@ Game.obj : error LNK2019: unresolved external symbol "public: class btCollisionO
 Game.obj : error LNK2019: unresolved external symbol "public: char const * __thiscall btWorldImporter::getNameForPointer(void const *)const " (?getNameForPointer@btWorldImporter@@QBEPBDPBX@Z) referenced in function __catch$?initialise@Game@@QAEXXZ$0
 Game.obj : error LNK2019: unresolved external symbol "public: __thiscall btBulletWorldImporter::btBulletWorldImporter(class btDynamicsWorld *)" (??0btBulletWorldImporter@@QAE@PAVbtDynamicsWorld@@@Z) referenced in function __catch$?initialise@Game@@QAEXXZ$0
 Game.obj : error LNK2019: unresolved external symbol "public: bool __thiscall btBulletWorldImporter::loadFile(char const *,char const *)" (?loadFile@btBulletWorldImporter@@QAE_NPBD0@Z) referenced in function __catch$?initialise@Game@@QAEXXZ$0
-SOIL.lib(stb_image_aug.o) : error LNK2019: unresolved external symbol __alloca referenced in function _stbi_zlib_decode_noheader_buffer
-O:\Code\MyOpenGLGame\game\Debug\game.exe : fatal error LNK1120: 14 unresolved externals
+libSOIL.lib(stb_image_aug.o) : error LNK2019: unresolved external symbol __alloca referenced in function _stbi_zlib_decode_noheader_buffer
+E:\Code\MyOpenGLGame\game\Debug\game.exe : fatal error LNK1120: 14 unresolved externals

@@ -48,12 +48,6 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <None Include="default.frag">
-      <Filter>Resource Files\Shaders</Filter>
-    </None>
-    <None Include="default.vert">
-      <Filter>Resource Files\Shaders</Filter>
-    </None>
     <None Include="mandelFrag.glsl">
       <Filter>Resource Files\Shaders</Filter>
     </None>
@@ -64,6 +58,12 @@
       <Filter>Resource Files\Shaders</Filter>
     </None>
     <None Include="texObjVert.glsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="default.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="default.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
   </ItemGroup>

@@ -5,19 +5,25 @@
 #endif
 // Use GLEW for access to OpenGL 
 #define GLEW_STATIC
-#include "Libs\glew-2.0.0-win32\glew-2.0.0\include\GL\glew.h"
+//#include "Libs\glew-2.0.0-win32\glew-2.0.0\include\GL\glew.h"
+#include <GL/glew.h>
+
 
 // SDL for windowing and input capture
-#include "Libs\SDL2-2.0.5\include\SDL.h"
+//#include "Libs\SDL2-2.0.5\include\SDL.h"
+#include <SDL.h>
 
 // Needed becuase the linker is fucking stupid and cannot find main.cpp
 #undef main
 
-#include "Libs\SDL2-2.0.5\include\SDL_opengl.h"
+//#include "Libs\SDL2-2.0.5\include\SDL_opengl.h"
+#include <SDL_opengl.h>
 
 // GLM for mathematics
-#include "Libs\glm-0.9.8.4\glm\glm\glm.hpp"
-#include "Libs\glm-0.9.8.4\glm\glm\gtc\matrix_transform.hpp"
+//#include "Libs\glm-0.9.8.4\glm\glm\glm.hpp"
+#include <glm.hpp>
+//#include "Libs\glm-0.9.8.4\glm\glm\gtc\matrix_transform.hpp"
+#include <gtc\matrix_transform.hpp>
 
 #include <vector>
 #include <string>
@@ -25,7 +31,8 @@
 
 #include <functional>
 
-#include "Libs\Phys\src\btBulletDynamicsCommon.h"
+//#include "Libs\Phys\src\btBulletDynamicsCommon.h"
+#include <btBulletDynamicsCommon.h>
 
 #include "Object.hpp"
 

@@ -1,18 +1,21 @@
 #include "Header.hpp"
 
-#include "Libs\assimp\include\assimp\Importer.hpp" // C++ importer interface
-#include "Libs\assimp\include\assimp\scene.h" // Output data structure
-#include "Libs\assimp\include\assimp\postprocess.h" // Post processing flags
-
+//#include "Libs\assimp\include\assimp\Importer.hpp" // C++ importer interface
+#include <assimp\Importer.hpp>
+//#include "Libs\assimp\include\assimp\scene.h" // Output data structure
+#include <assimp\scene.h>
+//#include "Libs\assimp\include\assimp\postprocess.h" // Post processing flags
+#include <assimp\postprocess.h>
 // iostream to access cout
 #include <iostream>
 #include <fstream>
 #include <sstream>
 
-#include "Libs\glm-0.9.8.4\glm\glm\gtc\type_ptr.hpp"
+//#include "Libs\glm-0.9.8.4\glm\glm\gtc\type_ptr.hpp"
+#include <gtc\type_ptr.hpp>
 
-
-#include "Libs\Phys\Serialize\BulletWorldImporter\btBulletWorldImporter.h"
+//#include "BulletWorldImporter\btBulletWorldImporter.h"
+#include <BulletWorldImporter\btBulletWorldImporter.h>
 
 #include <algorithm>
 
@@ -122,8 +125,8 @@ void Game::initialise()
 	btBulletWorldImporter* fileLoader = new btBulletWorldImporter(thePhysicsWorld);
 
 	//optionally enable the verbose mode to provide debugging information during file loading (a lot of data is generated, so this option is very slow)
-	//fileLoader->setVerboseMode(true);
 
+	fileLoader->setVerboseMode(true);
 	fileLoader->loadFile("assets/arena.bullet");
 
 	int numRigidBodies = fileLoader->getNumRigidBodies();
