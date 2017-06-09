@@ -26,5 +26,5 @@ Game.obj : error LNK2019: unresolved external symbol "public: class btCollisionO
 Game.obj : error LNK2019: unresolved external symbol "public: char const * __thiscall btWorldImporter::getNameForPointer(void const *)const " (?getNameForPointer@btWorldImporter@@QBEPBDPBX@Z) referenced in function __catch$?initialise@Game@@QAEXXZ$0
 Game.obj : error LNK2019: unresolved external symbol "public: __thiscall btBulletWorldImporter::btBulletWorldImporter(class btDynamicsWorld *)" (??0btBulletWorldImporter@@QAE@PAVbtDynamicsWorld@@@Z) referenced in function __catch$?initialise@Game@@QAEXXZ$0
 Game.obj : error LNK2019: unresolved external symbol "public: bool __thiscall btBulletWorldImporter::loadFile(char const *,char const *)" (?loadFile@btBulletWorldImporter@@QAE_NPBD0@Z) referenced in function __catch$?initialise@Game@@QAEXXZ$0
-Object.obj : error LNK2019: unresolved external symbol _SOIL_load_image referenced in function "public: void __thiscall VisibleObject::sendObjectToGPU(void)" (?sendObjectToGPU@VisibleObject@@QAEXXZ)
+SOIL.lib(stb_image_aug.o) : error LNK2019: unresolved external symbol __alloca referenced in function _stbi_zlib_decode_noheader_buffer
 O:\Code\MyOpenGLGame\game\Debug\game.exe : fatal error LNK1120: 14 unresolved externals

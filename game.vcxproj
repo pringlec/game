@@ -76,10 +76,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
       <AdditionalIncludeDirectories>O:\Code\MyOpenGLGame\game\Libs\Simple OpenGL Image Library\src;O:\Code\MyOpenGLGame\game\Libs\assimp\include;O:\Code\MyOpenGLGame\game\Libs\Phys\Serialize;O:\Code\MyOpenGLGame\game\Libs\SDL2-2.0.5\include;O:\Code\MyOpenGL Game\game\Libs\glm-0.9.8.4\glm\glm;O:\Code\MyOpenGL Game\game\Libs\glew-2.0.0-win32\glew-2.0.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>O:\Code\MyOpenGLGame\game\Libs\assimp\lib32;O:\Code\MyOpenGLGame\game\Libs\SDL2-2.0.5\lib\x86;O:\Code\MyOpenGLGame\game\Libs\SDL2-2.0.5\lib\x64;O:\Code\MyOpenGL Game\game\Libs\glm-0.9.8.4\glm\glm;O:\Code\MyOpenGLGame\game\Libs\glew-2.0.0-win32\glew-2.0.0\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glew32s.lib;sdl2.lib;assimp.lib;sdl2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>O:\Code\MyOpenGLGame\game\Libs\Phys\lib\Debug;O:\Code\MyOpenGLGame\game\Libs\Simple OpenGL Image Library\lib;O:\Code\MyOpenGLGame\game\Libs\SDL2-2.0.5\lib\x86;O:\Code\MyOpenGLGame\game\Libs\glew-2.0.0-win32\glew-2.0.0\lib\Release\Win32;O:\Code\MyOpenGLGame\game\Libs\assimp\lib32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;SOIL.lib;sdl2.lib;assimp.lib;sdl2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
